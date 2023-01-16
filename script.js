@@ -165,53 +165,76 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     } if(oldpick.length > 3) {
                     d3.select('#pair4 p')
                     .text(data[oldpick[3]].label);
-                    }
+                    } if(oldpick.length > 4) {
                     d3.select('#pair5 p')
-                    .text(oldpick[4]);
+                    .text(data[oldpick[4]].label);
+                    } if(oldpick.length > 5) {
                     d3.select('#pair6 p')
-                    .text(oldpick[5]);
+                    .text(data[oldpick[5]].label);
+                    } if(oldpick.length > 6) {
                     d3.select('#pair7 p')
-                    .text(oldpick[6]);
+                    .text(data[oldpick[6]].label);
+                    } if(oldpick.length > 7) {
                     d3.select('#pair8 p')
-                    .text(oldpick[7]);
+                    .text(data[oldpick[7]].label);
+                    } if(oldpick.length > 8) {
                     d3.select('#pair9 p')
-                    .text(oldpick[8]);
+                    .text(data[oldpick[8]].label);
+                    } if(oldpick.length > 9) {
                     d3.select('#pair10 p')
-                    .text(oldpick[9]);
+                    .text(data[oldpick[9]].label);
+                    } if(oldpick.length > 10) {
                     d3.select('#pair11 p')
-                    .text(oldpick[10]);
+                    .text(data[oldpick[10]].label);
+                    } if(oldpick.length > 11) {
                     d3.select('#pair12 p')
-                    .text(oldpick[11]);
+                    .text(data[oldpick[11]].label);
+                    } if(oldpick.length > 12) {
                     d3.select('#pair13 p')
-                    .text(oldpick[12]);
+                    .text(data[oldpick[12]].label);
+                    } if(oldpick.length > 13) {
                     d3.select('#pair14 p')
-                    .text(oldpick[13]);
+                    .text(data[oldpick[13]].label);
+                    } if(oldpick.length > 14) {
                     d3.select('#pair15 p')
-                    .text(oldpick[14]);
+                    .text(data[oldpick[14]].label);
+                    } if(oldpick.length > 15) {
                     d3.select('#pair16 p')
-                    .text(oldpick[15]);
+                    .text(data[oldpick[15]].label);
+                    } if(oldpick.length > 16) {
                     d3.select('#pair17 p')
-                    .text(oldpick[16]);
+                    .text(data[oldpick[16]].label);
+                    } if(oldpick.length > 17) {
                     d3.select('#pair18 p')
-                    .text(oldpick[17]);
+                    .text(data[oldpick[17]].label);
+                    } if(oldpick.length > 18) {
                     d3.select('#pair19 p')
-                    .text(oldpick[18]);
+                    .text(data[oldpick[18]].label);
+                    } if(oldpick.length > 19) {
                     d3.select('#pair20 p')
-                    .text(oldpick[19]);
+                    .text(data[oldpick[19]].label);
+                    } if(oldpick.length > 20) {
                     d3.select('#pair21 p')
-                    .text(oldpick[20]);
+                    .text(data[oldpick[20]].label);
+                    } if(oldpick.length > 21) {
                     d3.select('#pair22 p')
-                    .text(oldpick[21]);
+                    .text(data[oldpick[21]].label);
+                    } if(oldpick.length > 22) {
                     d3.select('#pair23 p')
-                    .text(oldpick[22]);
+                    .text(data[oldpick[22]].label);
+                    } if(oldpick.length > 23) {
                     d3.select('#pair24 p')
-                    .text(oldpick[23]);
+                    .text(data[oldpick[23]].label);
+                    } if(oldpick.length > 24) {
                     d3.select('#pair25 p')
-                    .text(oldpick[24]);
+                    .text(data[oldpick[24]].label);
+                    } if(oldpick.length > 25) {
                     d3.select('#pair26 p')
-                    .text(oldpick[25]);
+                    .text(data[oldpick[25]].label);
+                    } if(oldpick.length > 26) {
                     d3.select('#pair27 p')
-                    .text(oldpick[26]);
+                    .text(data[oldpick[26]].label);
+                    }
                 }
                     /* Get the result value from object "data" */
                     /* console.log(data[picked])
