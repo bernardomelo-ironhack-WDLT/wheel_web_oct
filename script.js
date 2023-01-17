@@ -25,33 +25,33 @@ var padding = {top:20, right:40, bottom:0, left:0},
             //randomNumbers = getRandomNumbers();
         //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
         var data = [
-                    {"label":"Alexandre A.",  "value":1,  "question":"Alexandre A."}, // padding
-                    {"label":"André L.",  "value":2,  "question":"André L."}, //font-family
-                    {"label":"Assebe K.",  "value":3,  "question":"Assebe K."}, //color
-                    {"label":"Caio M.",  "value":4,  "question":"Caio M."}, //font-weight
-                    {"label":"Caroline K.",  "value":5,  "question":"Caroline K."}, //font-size
-                    {"label":"Duarte F.",  "value":6,  "question":"Duarte F."}, //background-color
-                    {"label":"Déborah L.",  "value":7,  "question":"Déborah L."}, //nesting
-                    {"label":"Erika G.",  "value":8,  "question":"Erika G."}, //bottom
-                    {"label":"Eveline C.",  "value":9,  "question":"Eveline C."}, //sans-serif
-                    {"label":"Farid C.", "value":10, "question":"Farid C."},
-                    {"label":"Francisco P.", "value":11, "question":"Francisco P."},
-                    {"label":"Gabriel G.", "value":12, "question":"Gabriel G."},
-                    {"label":"Joana G.", "value":13, "question":"Joana G."},
-                    {"label":"José L.", "value":14, "question":"José L."},
-                    {"label":"João C.", "value":15, "question":"João C."},
-                    {"label":"João R.", "value":16, "question":"João R."},
-                    {"label":"Maria C.", "value":17, "question":"Maria C."},
-                    {"label":"Mariana F.", "value":18, "question":"Mariana F."},
-                    {"label":"Marisha D.", "value":19, "question":"Marisha D."},
-                    {"label":"Miguel J.", "value":20, "question":"Miguel J."},
-                    {"label":"Miguel L.", "value":21, "question":"Miguel L."},
-                    {"label":"Paulo C.", "value":22, "question":"Paulo C."},
-                    {"label":"Pedro L.", "value":23, "question":"Pedro L."},
-                    {"label":"Rafaela U.", "value":24, "question":"Rafaela U."},
-                    {"label":"Tiago R.", "value":25, "question":"Tiago R."},
-                    {"label":"Tomás B.", "value":26, "question":"Tomás B."},
-                    {"label":"Vanessa V.", "value":27, "question":"Vanessa V."}
+                    {"label":"Alexandre A.",  "value":1,  "question":"Alexandre", "pic":"Alunos_Jan23/Alexandre.png"}, // padding
+                    {"label":"André L.",  "value":2,  "question":"André", "pic":"Alunos_Jan23/Andre.jpeg"}, //font-family
+                    {"label":"Assebe K.",  "value":3,  "question":"Assebe", "pic":"Alunos_Jan23/Assebe.jpeg"}, //color
+                    {"label":"Caio M.",  "value":4,  "question":"Caio", "pic":"Alunos_Jan23/Caio.jpeg"}, //font-weight
+                    {"label":"Caroline K.",  "value":5,  "question":"Caroline", "pic":"Alunos_Jan23/Caroline.png"}, //font-size
+                    {"label":"Duarte F.",  "value":6,  "question":"Duarte", "pic":"Alunos_Jan23/Duarte.jpeg"}, //background-color
+                    {"label":"Déborah L.",  "value":7,  "question":"Déborah", "pic":"Alunos_Jan23/Deborah.png"}, //nesting
+                    {"label":"Erika G.",  "value":8,  "question":"Erika", "pic":"Alunos_Jan23/Erika.jpeg"}, //bottom
+                    {"label":"Eveline C.",  "value":9,  "question":"Eveline", "pic":"Alunos_Jan23/Eveline.png"}, //sans-serif
+                    {"label":"Farid C.", "value":10, "question":"Farid", "pic":"Alunos_Jan23/Farid.png"},
+                    {"label":"Francisco P.", "value":11, "question":"Francisco", "pic":"Alunos_Jan23/Francisco.png"},
+                    {"label":"Gabriel G.", "value":12, "question":"Gabriel", "pic":"Alunos_Jan23/Gabriel.png"},
+                    {"label":"Joana G.", "value":13, "question":"Joana", "pic":"Alunos_Jan23/Joana.jpeg"},
+                    {"label":"José L.", "value":14, "question":"José", "pic":"Alunos_Jan23/JoaoC.png"},
+                    {"label":"João C.", "value":15, "question":"João Carneiro", "pic":"Alunos_Jan23/JoaoR.jpeg"},
+                    {"label":"João R.", "value":16, "question":"João Raposo", "pic":"Alunos_Jan23/JoseL.png"},
+                    {"label":"Maria C.", "value":17, "question":"Maria", "pic":"Alunos_Jan23/Maria.jpeg"},
+                    {"label":"Mariana F.", "value":18, "question":"Mariana", "pic":"Alunos_Jan23/Mariana.jpeg"},
+                    {"label":"Marisha D.", "value":19, "question":"Marisha", "pic":"Alunos_Jan23/Marisha.jpeg"},
+                    {"label":"Miguel J.", "value":20, "question":"Miguel Jesus", "pic":"Alunos_Jan23/MiguelJ.png"},
+                    {"label":"Miguel L.", "value":21, "question":"Miguel Leite", "pic":"Alunos_Jan23/MiguelL.png"},
+                    {"label":"Paulo C.", "value":22, "question":"Paulo", "pic":"Alunos_Jan23/Paulo.png"},
+                    {"label":"Pedro L.", "value":23, "question":"Pedro", "pic":"Alunos_Jan23/Pedro.jpeg"},
+                    {"label":"Rafaela U.", "value":24, "question":"Rafaela", "pic":"Alunos_Jan23/Rafaela.jpeg"},
+                    {"label":"Tiago R.", "value":25, "question":"Tiago", "pic":"Alunos_Jan23/Tiago.jpeg"},
+                    {"label":"Tomás B.", "value":26, "question":"Tomás", "pic":"Alunos_Jan23/Tomas.png"},
+                    {"label":"Vanessa V.", "value":27, "question":"Vanessa", "pic":"Alunos_Jan23/Vanessa.jpeg"}
         ];
         var svg = d3.select('#chart')
             .append("svg")
@@ -153,7 +153,9 @@ var padding = {top:20, right:40, bottom:0, left:0},
                         .attr("fill", "#111");
                     //populate question
                     d3.select("#question h1")
-                        .text(data[picked].label);
+                        .text(data[picked].question);
+                    d3.select("#pic img")
+                    .attr("src",data[picked].pic);
                     oldrotation = rotation;
                     /* if (oldpick.length > 0) { */
                         /* console.log(data[oldpick[0]].label); */
@@ -266,6 +268,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     console.log(pair6)
                     console.log(pair7)
                     console.log(pair8) */
+                    console.log(data[picked].pic)
                     turn = false;
                     console.log(turn);
                     /* Comment the below line for restrict spin to sngle time */

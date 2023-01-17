@@ -5,7 +5,7 @@ body {
 }
 text{
     font-family:Helvetica, Arial, sans-serif;
-    font-size:11px;
+    font-size:14px;
     pointer-events:none;
 }
 #chart{
@@ -13,19 +13,20 @@ text{
     justify-content: center;
 }
 #question{
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  top: 60%;
+  left: 7%;
 }
 #question h1{
     /* background-color: black; */
-    font-size: 50px;
+    font-size: 32px;
     font-weight: bold;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: absolute;
     padding: 0;
     margin: 0;
-    top: 95%;
+    /* top: 95%; */
     -webkit-transform:translate(0,-50%);
             transform:translate(0,-50%); 
 }
@@ -52,7 +53,13 @@ text{
     top: 46%;
     transform: rotate(180deg);
 }
-#studentList {
+#x {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 200px;
+}
+/* #studentList {
     position: absolute;
     color: white;
     top: 0%;
@@ -66,7 +73,7 @@ text{
     left: 10%;
     line-height: 13px;
     font-size: 12px;
-}
+} */
 /* 
 .card1 {
     position: absolute;
