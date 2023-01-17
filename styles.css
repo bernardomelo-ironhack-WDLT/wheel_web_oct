@@ -1,3 +1,8 @@
+body {
+    background-image: url("john.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 text{
     font-family:Helvetica, Arial, sans-serif;
     font-size:11px;
@@ -8,20 +13,200 @@ text{
     justify-content: center;
 }
 #question{
-    position: absolute;
-    width:400px;
-    height:500px;
-    top:40vh;
-    left:42vw;
+    display: flex;
+    justify-content: center;
 }
 #question h1{
+    /* background-color: black; */
     font-size: 50px;
     font-weight: bold;
+    color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: absolute;
     padding: 0;
     margin: 0;
-    top:50%;
+    top: 95%;
+    -webkit-transform:translate(0,-50%);
+            transform:translate(0,-50%); 
+}
+#daily{
+  margin-top: 25px;
+  margin-bottom: -55px;
+    display: flex;
+    justify-content: center;
+}
+#daily h1{
+    background-color: black;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-transform:translate(0,-50%);
             transform:translate(0,-50%);
+    
 }
+#arrow {
+    position: absolute;
+    width: 100px;
+    right: 69%;
+    top: 46%;
+    transform: rotate(180deg);
+}
+#studentList {
+    position: absolute;
+    color: white;
+    top: 0%;
+    line-height: 13px;
+    font-size: 12px;
+}
+#points {
+    position: absolute;
+    color: white;
+    top: 0%;
+    left: 10%;
+    line-height: 13px;
+    font-size: 12px;
+}
+/* 
+.card1 {
+    position: absolute;
+    top: 10vh;
+    right: 45vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card2 {
+    position: absolute;
+    top: 25vh;
+    right: 45vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card3 {
+    position: absolute;
+    top: 40vh;
+    right: 45vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card4 {
+    position: absolute;
+    top: 55vh;
+    right: 45vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card5 {
+    position: absolute;
+    top: 70vh;
+    right: 45vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card6 {
+    position: absolute;
+    top: 85vh;
+    right: 45vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card7 {
+    position: absolute;
+    top: 10vh;
+    right: 25vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card8 {
+    position: absolute;
+    top: 25vh;
+    right: 25vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card9 {
+    position: absolute;
+    top: 40vh;
+    right: 25vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card10 {
+    position: absolute;
+    top: 55vh;
+    right: 25vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card11 {
+    position: absolute;
+    top: 70vh;
+    right: 25vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card12 {
+    position: absolute;
+    top: 85vh;
+    right: 25vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card13 {
+    position: absolute;
+    top: 10vh;
+    right: 5vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+.card14 {
+    position: absolute;
+    top: 25vh;
+    right: 5vw;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid black;
+  }
+
+ */
