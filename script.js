@@ -89,7 +89,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
             var  ps       = 360/data.length,
                  pieslice = Math.round(1440/data.length),
                  /* Velocidade rng */
-                 rng      = Math.floor((Math.random() * 1440) + 360);
+                 rng      = Math.floor((Math.random() * 2880) + 360);
                  
             /* VELOCIDADE DA ROTACAO */
             rotation = (Math.round(rng / ps) * ps * 2);

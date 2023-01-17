@@ -2,10 +2,11 @@ body {
     background-image: url("john.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: black; */
 }
 text{
     font-family:Helvetica, Arial, sans-serif;
-    font-size:14px;
+    font-size:16px;
     pointer-events:none;
 }
 #chart{
