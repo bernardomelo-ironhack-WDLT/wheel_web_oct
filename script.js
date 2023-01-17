@@ -6,20 +6,6 @@ var padding = {top:20, right:40, bottom:0, left:0},
             oldrotation = 0,
             picked = 27,
             oldpick = [],
-            /* newArray = [],
-            novoArray = [],
-            pair3 = [],
-            pair4 = [],
-            pair5 = [],
-            pair6 = [],
-            pair7 = [],
-            pair8 = [],
-            pair9 = [],
-            pair10 = [],
-            pair11 = [],
-            pair12 = [],
-            pair13 = [],
-            pair14 = [], */
             turn = false;
             color = d3.scale.category20();//category20c()
             //randomNumbers = getRandomNumbers();
@@ -99,6 +85,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
                 container.on("click", null);
                 return;
             }
+            song.play();
             var  ps       = 360/data.length,
                  pieslice = Math.round(1440/data.length),
                  /* Velocidade rng */
@@ -114,38 +101,11 @@ var padding = {top:20, right:40, bottom:0, left:0},
                 return;
             } else {
                 oldpick.push(picked)
-                /* if(oldpick.length > 2){
-                    newArray.push(picked)
-                } else if(newArray.length == 2) {
-                    pair3.push(picked) */
-                    /* newArray = []; */
-                    /* if(newArray.length === 2) {
-                        newArray = pair4;
-                        newArray = [];
-                    } */
-                /* } else if(pair3.length > 2){
-                    novoArray.push(picked)
-                } */ /* else if(pair3.length === 2){
-                    pair4 = pair3;
-                    pair3 = [];
-                } else if(pair4.length === 2){
-                    pair5 = pair4;
-                    pair4 = [];
-                } else if(pair5.length === 2){
-                    pair6 = pair5;
-                    pair5 = [];
-                } else if(pair6.length === 2){
-                    pair7 = pair6;
-                    pair6 = [];
-                } else if(pair7.length === 2){
-                    pair8 = pair7;
-                    pair7 = [];
-                } */
             }            
             rotation += 270 - Math.round(ps/2);
             vis.transition()
             /* DURACAO DO TEMPO DELA RODANDO */
-                .duration(12000)
+                .duration(7500)
                 .attrTween("transform", rotTween)
                 .each("end", function(){
                     //mark question as seen
@@ -157,117 +117,9 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     d3.select("#pic img")
                     .attr("src",data[picked].pic);
                     oldrotation = rotation;
-                    /* if (oldpick.length > 0) { */
-                        /* console.log(data[oldpick[0]].label); */
-                    
-                    /* d3.select('#pair1 p')
-                        .text(data[oldpick[0]].label)
-                        if(oldpick.length > 1) {
-                    d3.select('#pair2 p')
-                        .text(data[oldpick[1]].label);
-                    } if(oldpick.length > 2) {
-                    d3.select('#pair3 p')
-                        .text(data[oldpick[2]].label);
-                    } if(oldpick.length > 3) {
-                    d3.select('#pair4 p')
-                    .text(data[oldpick[3]].label);
-                    } if(oldpick.length > 4) {
-                    d3.select('#pair5 p')
-                    .text(data[oldpick[4]].label);
-                    } if(oldpick.length > 5) {
-                    d3.select('#pair6 p')
-                    .text(data[oldpick[5]].label);
-                    } if(oldpick.length > 6) {
-                    d3.select('#pair7 p')
-                    .text(data[oldpick[6]].label);
-                    } if(oldpick.length > 7) {
-                    d3.select('#pair8 p')
-                    .text(data[oldpick[7]].label);
-                    } if(oldpick.length > 8) {
-                    d3.select('#pair9 p')
-                    .text(data[oldpick[8]].label);
-                    } if(oldpick.length > 9) {
-                    d3.select('#pair10 p')
-                    .text(data[oldpick[9]].label);
-                    } if(oldpick.length > 10) {
-                    d3.select('#pair11 p')
-                    .text(data[oldpick[10]].label);
-                    } if(oldpick.length > 11) {
-                    d3.select('#pair12 p')
-                    .text(data[oldpick[11]].label);
-                    } if(oldpick.length > 12) {
-                    d3.select('#pair13 p')
-                    .text(data[oldpick[12]].label);
-                    } if(oldpick.length > 13) {
-                    d3.select('#pair14 p')
-                    .text(data[oldpick[13]].label);
-                    } if(oldpick.length > 14) {
-                    d3.select('#pair15 p')
-                    .text(data[oldpick[14]].label);
-                    } if(oldpick.length > 15) {
-                    d3.select('#pair16 p')
-                    .text(data[oldpick[15]].label);
-                    } if(oldpick.length > 16) {
-                    d3.select('#pair17 p')
-                    .text(data[oldpick[16]].label);
-                    } if(oldpick.length > 17) {
-                    d3.select('#pair18 p')
-                    .text(data[oldpick[17]].label);
-                    } if(oldpick.length > 18) {
-                    d3.select('#pair19 p')
-                    .text(data[oldpick[18]].label);
-                    } if(oldpick.length > 19) {
-                    d3.select('#pair20 p')
-                    .text(data[oldpick[19]].label);
-                    } if(oldpick.length > 20) {
-                    d3.select('#pair21 p')
-                    .text(data[oldpick[20]].label);
-                    } if(oldpick.length > 21) {
-                    d3.select('#pair22 p')
-                    .text(data[oldpick[21]].label);
-                    } if(oldpick.length > 22) {
-                    d3.select('#pair23 p')
-                    .text(data[oldpick[22]].label);
-                    } if(oldpick.length > 23) {
-                    d3.select('#pair24 p')
-                    .text(data[oldpick[23]].label);
-                    } if(oldpick.length > 24) {
-                    d3.select('#pair25 p')
-                    .text(data[oldpick[24]].label);
-                    } if(oldpick.length > 25) {
-                    d3.select('#pair26 p')
-                    .text(data[oldpick[25]].label);
-                    } if(oldpick.length > 26) {
-                    d3.select('#pair27 p')
-                    .text(data[oldpick[26]].label);
-                    } 
-                }*/
                     /* Get the result value from object "data" */
-                    /* console.log(data[picked])
-                    console.log(oldpick[0])
-                    console.log(oldpick[1])
-                    console.log(oldpick[2])
-                    console.log(oldpick[3]) */
                     console.log(data[picked].label)
                     console.log([picked])
-                    
-                    /* console.log(data[picked]) */
-                    /* console.log(data[oldpick]) */
-                    /* console.log(data[oldpick[0]])
-                    console.log(data[picked])
-                    console.log(oldpick)
-                    console.log([oldpick[1]])
-                    console.log([oldpick[2]])
-                    console.log([oldpick[2]]) */
-                    /* console.log(data) */
-                    /* console.log(newArray)
-                    console.log(novoArray)
-                    console.log(pair3)
-                    console.log(pair4)
-                    console.log(pair5)
-                    console.log(pair6)
-                    console.log(pair7)
-                    console.log(pair8) */
                     console.log(data[picked].pic)
                     turn = false;
                     console.log(turn);
