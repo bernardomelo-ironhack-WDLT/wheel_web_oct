@@ -1,12 +1,12 @@
 var padding = {top:20, right:40, bottom:0, left:0},
-            w = 500 - padding.left - padding.right,
-            h = 500 - padding.top  - padding.bottom,
+            w = 600 - padding.left - padding.right,
+            h = 600 - padding.top  - padding.bottom,
             r = Math.min(w, h)/2,
             rotation = 0,
             oldrotation = 0,
             picked = 27,
             oldpick = [],
-            newArray = [],
+            /* newArray = [],
             novoArray = [],
             pair3 = [],
             pair4 = [],
@@ -19,7 +19,8 @@ var padding = {top:20, right:40, bottom:0, left:0},
             pair11 = [],
             pair12 = [],
             pair13 = [],
-            pair14 = [],
+            pair14 = [], */
+            turn = false;
             color = d3.scale.category20();//category20c()
             //randomNumbers = getRandomNumbers();
         //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
@@ -89,7 +90,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
             });
         container.on("click", spin);
         function spin(d){
-            
+            turn = true;
             container.on("click", null);
             //all slices have been seen, all done
             console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
@@ -100,9 +101,11 @@ var padding = {top:20, right:40, bottom:0, left:0},
             }
             var  ps       = 360/data.length,
                  pieslice = Math.round(1440/data.length),
+                 /* Velocidade rng */
                  rng      = Math.floor((Math.random() * 1440) + 360);
-                
-            rotation = (Math.round(rng / ps) * ps);
+                 
+            /* VELOCIDADE DA ROTACAO */
+            rotation = (Math.round(rng / ps) * ps * 2);
             
             picked = Math.round(data.length - (rotation % 360)/ps);
             picked = picked >= data.length ? (picked % data.length) : picked;
@@ -139,9 +142,10 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     pair7 = [];
                 } */
             }            
-            rotation += 90 - Math.round(ps/2);
+            rotation += 270 - Math.round(ps/2);
             vis.transition()
-                .duration(3000)
+            /* DURACAO DO TEMPO DELA RODANDO */
+                .duration(12000)
                 .attrTween("transform", rotTween)
                 .each("end", function(){
                     //mark question as seen
@@ -151,10 +155,10 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     d3.select("#question h1")
                         .text(data[picked].label);
                     oldrotation = rotation;
-                    if (oldpick.length > 0) {
+                    /* if (oldpick.length > 0) { */
                         /* console.log(data[oldpick[0]].label); */
                     
-                    d3.select('#pair1 p')
+                    /* d3.select('#pair1 p')
                         .text(data[oldpick[0]].label)
                         if(oldpick.length > 1) {
                     d3.select('#pair2 p')
@@ -234,8 +238,8 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     } if(oldpick.length > 26) {
                     d3.select('#pair27 p')
                     .text(data[oldpick[26]].label);
-                    }
-                }
+                    } 
+                }*/
                     /* Get the result value from object "data" */
                     /* console.log(data[picked])
                     console.log(oldpick[0])
@@ -262,30 +266,38 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     console.log(pair6)
                     console.log(pair7)
                     console.log(pair8) */
-              
+                    turn = false;
+                    console.log(turn);
                     /* Comment the below line for restrict spin to sngle time */
                     container.on("click", spin);
                 })
         }
         //make arrow
         svg.append("g")
-            .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h/2)+padding.top) + ")")
+            .attr("transform", "translate(" + (w + 50) + "," + ((h/2)+padding.top) + ")")
             .append("path")
-            .attr("d", "M-" + (r*.15) + ",0L0," + (r*.05) + "L0,-" + (r*.05) + "Z")
-            .style({"fill":"black"});
+            /* .attr("d", "M-" + (r*.20) + ",0L0," + (r*.1) + "L0,-" + (r*.1) + "Z") */
+            .style({"fill":"red"});
         //draw spin circle
-        container.append("circle")
+        /* container.append("circle")
             .attr("cx", 0)
             .attr("cy", 0)
             .attr("r", 60)
-            .style({"fill":"white","cursor":"pointer"});
+            .style({"fill":"white","cursor":"pointer"}); */
+        container.append("image")
+            .attr("xlink:href", "ironhackpt-removebg-preview.png")
+            .attr("x", -110)
+            .attr("y", -110)
+            .attr("width", 225)
+            .attr("height", 225)
+            .style({"cursor":"pointer"});
         //spin text
-        container.append("text")
+        /* container.append("text")
             .attr("x", 0)
             .attr("y", 15)
             .attr("text-anchor", "middle")
             .text("SPIN")
-            .style({"font-weight":"bold", "font-size":"30px"});
+            .style({"font-weight":"bold", "font-size":"30px"}); */
         
         
         function rotTween(to) {
@@ -294,8 +306,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
             return "rotate(" + i(t) + ")";
           };
         }
-        
-        
+
         function getRandomNumbers(){
             var array = new Uint16Array(1000);
             var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
