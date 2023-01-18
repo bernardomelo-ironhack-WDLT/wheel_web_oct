@@ -105,7 +105,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
             rotation += 90 - Math.round(ps/2);
             vis.transition()
             /* DURACAO DO TEMPO DELA RODANDO */
-                .duration(100)
+                .duration(7500)
                 .attrTween("transform", rotTween)
                 .each("end", function(){
                     //mark question as seen
