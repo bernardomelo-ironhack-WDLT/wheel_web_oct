@@ -45,7 +45,8 @@ text{
 }
 #profilePic {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 5%;
   width: 200px;
+  font-size: 14px;
 }

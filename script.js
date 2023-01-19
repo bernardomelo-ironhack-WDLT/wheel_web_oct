@@ -11,7 +11,34 @@ var padding = {top:20, right:40, bottom:0, left:0},
             //randomNumbers = getRandomNumbers();
         //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
         var data = [
-                    {"label":"Alexandre A.",  "value":1,  "question":"Alexandre", "pic":"Alunos_Jan23/Alexandre.png"}, // padding
+                    {"label":"Alexandre A.",  "value":1,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, // padding
+                    {"label":"André L.",  "value":2,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, //font-family
+                    {"label":"Assebe K.",  "value":3,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, //color
+                    {"label":"Caio M.",  "value":4,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, //font-weight
+                    {"label":"Caroline K.",  "value":5,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, //font-size
+                    {"label":"Duarte F.",  "value":6,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, //background-color
+                    {"label":"Déborah L.",  "value":7,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, //nesting
+                    {"label":"Erika G.",  "value":8,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, //bottom
+                    {"label":"Eveline C.",  "value":9,  "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}, //sans-serif
+                    {"label":"Farid C.", "value":10, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Francisco P.", "value":11, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Gabriel G.", "value":12, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Joana G.", "value":13, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"José L.", "value":14, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"João C.", "value":15, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"João R.", "value":16, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Maria C.", "value":17, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Mariana F.", "value":18, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Marisha D.", "value":19, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Miguel J.", "value":20, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Miguel L.", "value":21, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Paulo C.", "value":22, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Pedro L.", "value":23, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Rafaela U.", "value":24, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Tiago R.", "value":25, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Tomás B.", "value":26, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"},
+                    {"label":"Vanessa V.", "value":27, "question":"HAPPY BIRTHDAY ANDRE!", "pic":"Alunos_Jan23/Andre_prof.jpeg"}
+                    /* {"label":"Alexandre A.",  "value":1,  "question":"Alexandre", "pic":"Alunos_Jan23/Alexandre.png"}, // padding
                     {"label":"André L.",  "value":2,  "question":"André", "pic":"Alunos_Jan23/Andre.jpeg"}, //font-family
                     {"label":"Assebe K.",  "value":3,  "question":"Assebe", "pic":"Alunos_Jan23/Assebe.jpeg"}, //color
                     {"label":"Caio M.",  "value":4,  "question":"Caio", "pic":"Alunos_Jan23/Caio.jpeg"}, //font-weight
@@ -37,7 +64,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     {"label":"Rafaela U.", "value":24, "question":"Rafaela", "pic":"Alunos_Jan23/Rafaela.jpeg"},
                     {"label":"Tiago R.", "value":25, "question":"Tiago", "pic":"Alunos_Jan23/Tiago.jpeg"},
                     {"label":"Tomás B.", "value":26, "question":"Tomás", "pic":"Alunos_Jan23/Tomas.png"},
-                    {"label":"Vanessa V.", "value":27, "question":"Vanessa", "pic":"Alunos_Jan23/Vanessa.jpeg"}
+                    {"label":"Vanessa V.", "value":27, "question":"Vanessa", "pic":"Alunos_Jan23/Vanessa.jpeg"} */
         ];
         var svg = d3.select('#chart')
             .append("svg")
@@ -108,6 +135,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
                 .duration(7500)
                 .attrTween("transform", rotTween)
                 .each("end", function(){
+                    niver.play();
                     //mark question as seen
                     d3.select(".slice:nth-child(" + (picked + 1) + ") path")
                         .attr("fill", "#111");
@@ -126,6 +154,7 @@ var padding = {top:20, right:40, bottom:0, left:0},
                     /* Comment the below line for restrict spin to sngle time */
                     container.on("click", spin);
                 })
+                
         }
         //make arrow
         svg.append("g")
