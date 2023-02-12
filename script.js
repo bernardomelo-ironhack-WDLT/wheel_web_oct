@@ -260,7 +260,7 @@ function spin(d) {
   vis
     .transition()
     /* DURACAO DO TEMPO DELA RODANDO */
-    .duration(7500)
+    .duration(8000)
     .attrTween("transform", rotTween)
     /* console.log(data[picked].label)
                     console.log([picked]) */

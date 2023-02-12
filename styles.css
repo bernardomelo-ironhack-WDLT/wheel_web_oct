@@ -1,7 +1,8 @@
 body {
-    background-image: url("footpyhton.jpeg");
+    background-image: url("mamona-removebg-preview.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(251, 252, 246);
+    /* background-size: cover; */
     /* background-color: black; */
 }
 text{
@@ -15,8 +16,8 @@ text{
 }
 #question{
   position: absolute;
-  top: 25%;
-  left: 7.5%;
+  top: 35%;
+  left: 79%;
 }
 #question h1{
     font-size: 32px;
@@ -45,7 +46,8 @@ text{
 }
 #profilePic {
   position: absolute;
-  top: 30%;
-  left: 5%;
+  top: 40%;
+  left: 77%;
   width: 200px;
+  border-radius: 15px;
 }
