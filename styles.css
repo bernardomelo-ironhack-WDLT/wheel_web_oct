@@ -1,9 +1,8 @@
 body {
-    background-image: url("mamona-removebg-preview.png");
+    background-image: url("/assets/john.jpeg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(251, 252, 246);
-    /* background-size: cover; */
-    /* background-color: black; */
 }
 text{
     font-family:Helvetica, Arial, sans-serif;
@@ -17,12 +16,13 @@ text{
 #question{
   position: absolute;
   top: 35%;
-  left: 79%;
+  left: 9%;
+
 }
 #question h1{
     font-size: 32px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: absolute;
     padding: 0;
@@ -39,7 +39,7 @@ text{
 #daily h1{
     font-size: 50px;
     font-weight: bold;
-    color: rgb(0, 0, 0);;
+    color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-transform:translate(0,-50%);
             transform:translate(0,-50%);   
@@ -47,7 +47,7 @@ text{
 #profilePic {
   position: absolute;
   top: 40%;
-  left: 77%;
+  left: 7%;
   width: 200px;
   border-radius: 15px;
 }

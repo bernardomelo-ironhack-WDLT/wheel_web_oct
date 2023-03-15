@@ -7,64 +7,62 @@ let padding = { top: 20, right: 40, bottom: 0, left: 0 },
   picked = 27,
   oldpick = [],
   turn = false;
-color = d3.scale.category20(); //category20c()
-//randomNumbers = getRandomNumbers();
-//http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
+color = d3.scale.category20();
 let data = [
   {
     label: "Alexandre A.",
     value: 1,
     question: "Alexandre",
     pic: "Alunos_Jan23/Alexandre.png",
-  }, // padding
+  },
   {
     label: "André L.",
     value: 2,
     question: "André",
     pic: "Alunos_Jan23/Andre.jpeg",
-  }, //font-family
+  },
   {
     label: "Assebe K.",
     value: 3,
     question: "Assebe",
     pic: "Alunos_Jan23/Assebe.jpeg",
-  }, //color
+  },
   {
     label: "Caio M.",
     value: 4,
     question: "Caio",
     pic: "Alunos_Jan23/Caio.jpeg",
-  }, //font-weight
+  },
   {
     label: "Caroline K.",
     value: 5,
     question: "Caroline",
     pic: "Alunos_Jan23/Caroline.png",
-  }, //font-size
+  },
   {
     label: "Duarte F.",
     value: 6,
     question: "Duarte",
     pic: "Alunos_Jan23/Duarte.jpeg",
-  }, //background-color
+  },
   {
     label: "Déborah L.",
     value: 7,
     question: "Déborah",
     pic: "Alunos_Jan23/Deborah.png",
-  }, //nesting
+  },
   {
     label: "Erika G.",
     value: 8,
     question: "Erika",
     pic: "Alunos_Jan23/Erika.jpeg",
-  }, //bottom
+  },
   {
     label: "Eveline C.",
     value: 9,
     question: "Eveline",
     pic: "Alunos_Jan23/Eveline.png",
-  }, //sans-serif
+  },
   {
     label: "Farid C.",
     value: 10,
@@ -230,9 +228,6 @@ container.on("click", spin);
 function spin(d) {
   turn = true;
   container.on("click", null);
-  //all slices have been seen, all done
-  /* console.log("OldPick: " + oldpick.length, "Data length: " + data.length); */
-  /* console.log(data.length) */
   if (oldpick.length == data.length) {
     console.log("done");
     container.on("click", null);
@@ -262,33 +257,23 @@ function spin(d) {
     /* DURACAO DO TEMPO DELA RODANDO */
     .duration(8000)
     .attrTween("transform", rotTween)
-    /* console.log(data[picked].label)
-                    console.log([picked]) */
-
     .each("end", function () {
       if (data[picked].label === "Miguel L.") {
         data[picked].label === "NOT HERE";
       }
-      //mark question as seen
       d3.select(".slice:nth-child(" + (picked + 1) + ") path").attr(
         "fill",
         "#111"
       );
-      //populate question
       d3.select("#question h1").text(data[picked].question);
       d3.select("#pic img").attr("src", data[picked].pic);
       oldrotation = rotation;
-      /* Get the result value from object "data" */
-      /* console.log(data[picked].label);
-      console.log([picked]);
-      console.log(data[picked].pic); */
       turn = false;
-      /* console.log(turn); */
-      /* Comment the below line for restrict spin to sngle time */
       container.on("click", spin);
     });
 }
-//make arrow
+
+//arrow
 svg
   .append("g")
   .attr(
@@ -306,19 +291,12 @@ svg
             .style({"fill":"white","cursor":"pointer"}); */
 container
   .append("image")
-  .attr("xlink:href", "ironhackpt-removebg-preview.png")
+  .attr("xlink:href", "/assets/ironhackpt-removebg-preview.png")
   .attr("x", -110)
   .attr("y", -110)
   .attr("width", 225)
   .attr("height", 225)
   .style({ cursor: "pointer" });
-//spin text
-/* container.append("text")
-            .attr("x", 0)
-            .attr("y", 15)
-            .attr("text-anchor", "middle")
-            .text("SPIN")
-            .style({"font-weight":"bold", "font-size":"30px"}); */
 
 function rotTween(to) {
   let i = d3.interpolate(oldrotation % 360, rotation);
@@ -337,7 +315,6 @@ function getRandomNumbers() {
     window.crypto.getRandomValues(array);
     console.log("works");
   } else {
-    //no support for crypto, get crappy random numbers
     for (let i = 0; i < 1000; i++) {
       array[i] = Math.floor(Math.random() * 100000) + 1;
     }
