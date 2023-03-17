@@ -8,15 +8,21 @@ let padding = { top: 20, right: 40, bottom: 0, left: 0 },
   oldpick = [],
   turn = false;
 color = d3.scale.category20();
+
+
+/* Attention: The following logic is the same for the Data Wheel: https://github.com/lzaquine/wheel_data */
+
+/* Change name/picture of each student */
+
 let data = [
   {
-    label: "Alexandre A.",
+    label: "Alexandre A.", /* Student Name */
     value: 1,
-    question: "Alexandre",
-    pic: "Alunos_Jan23/Alexandre.png",
+    question: "Alexandre", /* Name that is going to show up on the screen */
+    pic: "Alunos_Jan23/Alexandre.png", /* Picture of the student */
   },
   {
-    label: "André L.",
+    label: "André L.", 
     value: 2,
     question: "André",
     pic: "Alunos_Jan23/Andre.jpeg",
@@ -187,9 +193,7 @@ let pie = d3.layout
   .value(function (d) {
     return 1;
   });
-// declare an arc generator function
 let arc = d3.svg.arc().outerRadius(r);
-// select paths, use arc generator to draw
 let arcs = vis
   .selectAll("g.slice")
   .data(pie)
@@ -205,7 +209,6 @@ arcs
   .attr("d", function (d) {
     return arc(d);
   });
-// add the text
 arcs
   .append("text")
   .attr("transform", function (d) {
@@ -234,13 +237,14 @@ function spin(d) {
     return;
   }
 
+  /* Song method.  */
   song.play();
   let ps = 360 / data.length,
     pieslice = Math.round(1440 / data.length),
-    /* Velocidade rng */
+    /* RNG Velocity */
     rng = Math.floor(Math.random() * 2880 + 360);
 
-  /* VELOCIDADE DA ROTACAO */
+  /* Rotation Velocity */
   rotation = Math.round(rng / ps) * ps * 2;
 
   picked = Math.round(data.length - (rotation % 360) / ps);
@@ -254,8 +258,8 @@ function spin(d) {
   rotation += 90 - Math.round(ps / 2);
   vis
     .transition()
-    /* DURACAO DO TEMPO DELA RODANDO */
-    .duration(8000)
+    /* Duration of each spin */
+    .duration(8000) /* I always cropped the audio to 7-8 seconds to use 8000 here */
     .attrTween("transform", rotTween)
     .each("end", function () {
       if (data[picked].label === "Miguel L.") {
@@ -273,7 +277,7 @@ function spin(d) {
     });
 }
 
-//arrow
+/* Arrow */
 svg
   .append("g")
   .attr(
@@ -283,7 +287,7 @@ svg
   .append("path")
   .attr("d", "M-" + r * 0.8 + ",0L0," + r * 0.4 + "L0,-" + r * 0.4 + "Z")
   .style({ fill: "red" });
-//draw spin circle
+/* Draw spin circle */
 /* container.append("circle")
             .attr("cx", 0)
             .attr("cy", 0)
@@ -291,7 +295,7 @@ svg
             .style({"fill":"white","cursor":"pointer"}); */
 container
   .append("image")
-  .attr("xlink:href", "/assets/ironhackpt-removebg-preview.png")
+  .attr("xlink:href", "/assets/ironhackpt-removebg-preview.png") /* Image on the center of the wheel. To change size/position, lines 299 to 302 */
   .attr("x", -110)
   .attr("y", -110)
   .attr("width", 225)

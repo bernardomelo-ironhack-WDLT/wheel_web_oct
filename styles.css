@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/john.jpeg");
+    background-image: url("/assets/john.jpeg"); /* Background image of the website */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(251, 252, 246);
