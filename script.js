@@ -11,121 +11,91 @@ color = d3.scale.category20();
 
 var data = [
   {
-    label: 'Aamir M.',
+    label: 'André G.',
     value: 1,
-    question: 'Aamir M.',
+    question: 'André G.',
     pic: 'Alunos_Apr23/snorlax.png',
   }, // padding
-  { label: 'Agnes M.', value: 2, question: 'Agnes M.', pic: 'Alunos_Apr23/meowth.png' }, //font-family
+  { label: 'Bruno C.', value: 2, question: 'Bruno C.', pic: 'Alunos_Apr23/meowth.png' }, //font-family
   {
-    label: 'Filipa F.',
+    label: 'Bruno M.',
     value: 3,
-    question: 'Filipa F.',
+    question: 'Bruno M.',
     pic: 'Alunos_Apr23/chikorita.png',
   }, //color
   {
-    label: 'Paulina G.',
+    label: 'Carol V.',
     value: 4,
-    question: 'Paulina G.',
+    question: 'Carol V.',
     pic: 'Alunos_Apr23/squirtle.png',
   }, //font-weight
   {
-    label: 'André Pinto',
+    label: 'Daniel R.',
     value: 5,
-    question: 'André Pinto',
+    question: 'Daniel R.',
     pic: 'Alunos_Apr23/psyduck.png',
   }, //font-size
   {
-    label: 'Bruno Cunha',
+    label: 'Fares Q.',
     value: 6,
-    question: 'Bruno Cunha',
+    question: 'Fares Q.',
     pic: 'Alunos_Apr23/magikarp.png',
   }, //nesting
   { label: 'Inception', value: 7, question: "Teacher's choice", pic: 'Alunos_Apr23/ash.png' },
   {
-    label: 'Gabriel O.',
+    label: 'Guilherme S.',
     value: 8,
-    question: 'Gabriel O.',
+    question: 'Guilherme S.',
     pic: 'Alunos_Apr23/bulbasaur.png',
   }, //sans-serif
   {
-    label: 'Gonçalo M.',
+    label: 'Jakob B.',
     value: 9,
-    question: 'Gonçalo M.',
+    question: 'Jakob B.',
     pic: 'Alunos_Apr23/charmander.png',
   },
   {
-    label: 'João Borrega',
+    label: 'João C.',
     value: 10,
-    question: 'João Borrega',
+    question: 'João C.',
     pic: 'Alunos_Apr23/tangela.png',
   },
   {
-    label: 'João Elias',
+    label: 'João S.',
     value: 11,
-    question: 'João Elias',
+    question: 'João S.',
     pic: 'Alunos_Apr23/psyduck.png',
   },
   {
-    label: 'Julia G.',
+    label: 'João V.',
     value: 12,
-    question: 'Julia G.',
+    question: 'João V.',
     pic: 'Alunos_Apr23/snorlax.png',
   },
   {
-    label: 'Manuel Segarra',
+    label: 'Marcelo',
     value: 13,
-    question: 'Manuel Segarra',
+    question: 'Marcelo',
     pic: 'Alunos_Apr23/meowth.png',
   },
   {
-    label: 'Mariana Marques',
+    label: 'Mariana C.',
     value: 14,
-    question: 'Mariana Marques',
+    question: 'Mariana C.',
     pic: 'Alunos_Apr23/eevee.png',
   },
   {
-    label: 'Mariana Silva',
+    label: 'Miguel M.',
     value: 15,
-    question: 'Mariana Silva',
+    question: 'Miguel M.',
     pic: 'Alunos_Apr23/bulbasaur.png',
   },
   {
-    label: 'Maureen T.',
+    label: 'Vasco G.',
     value: 16,
-    question: 'Maureen T.',
+    question: 'Vasco G.',
     pic: 'Alunos_Apr23/eevee.png',
-  },
-  {
-    label: 'Mehdi N.',
-    value: 17,
-    question: 'Mehdi N.',
-    pic: 'Alunos_Apr23/psyduck.png',
-  },
-  {
-    label: 'Miguel Leite',
-    value: 18,
-    question: 'Miguel Leite',
-    pic: 'Alunos_Apr23/charmander.png',
-  },
-  {
-    label: 'Rita Saraiva',
-    value: 19,
-    question: 'Rita Saraiva',
-    pic: 'Alunos_Apr23/eevee.png',
-  },
-  {
-    label: 'Tiago R.',
-    value: 20,
-    question: 'Tiago R.',
-    pic: 'Alunos_Apr23/tangela.png',
-  },
-  {
-    label: 'Tomás A.',
-    value: 21,
-    question: 'Tomás A.',
-    pic: 'Alunos_Apr23/magikarp.png',
-  },
+  }
 ];
 var svg = d3
   .select('#chart')
